@@ -69,7 +69,7 @@ module.exports = {
             // children 是否在子模块中查找
             // deepChildren
             // async 创建异步代码块
-        })
+        }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './index.html',
