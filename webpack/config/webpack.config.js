@@ -72,7 +72,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './index.html',
+            template: './big.html',
             // 指定哪个入口的文件被打包，默认是所有
             chunk: ['vendor'],
             minify: {
