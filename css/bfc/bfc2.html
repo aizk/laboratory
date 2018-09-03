@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bfc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .left{
+            background: #73DE80;    /* 绿色 */
+            /* opacity: 0.5; */
+            border: 3px solid #F31264;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        .right{                        /* 粉色 */
+            background: #EF5BE2;
+            /* opacity: 0.5; */
+            border: 3px solid #F31264;
+            width:400px;
+            min-height: 100px;
+        }
+        .box{
+            background:#888;
+            height: 100%;
+            /* BFC */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>box 通过 overflow: hidden 创建 BFC</p>
+        <p>浮动元素被算进 box 的高度中</p>
+    </div>
+    <div class='box'>
+            <div class='left'> </div>
+            <div class='right'> 123 </div>
+    </div>
+</body>
+</html>

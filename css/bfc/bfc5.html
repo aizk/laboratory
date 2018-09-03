@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+.parent{
+    width: 100px;
+    height: 100px;
+    background: antiquewhite;
+    margin: 10px;
+}
+.son1 {
+    width: 40px;
+    height: 40px;
+    background: red;
+    margin-top: 50px;
+}
+
+.son2 {
+    width: 40px;
+    height: 40px;
+    background: red;
+    margin-top: 50px;
+}
+
+.demo1 .son{
+    overflow: hidden;
+}
+.demo2 .parent{
+    overflow: hidden;
+}
+</style>
+<body>
+    <div class='demo1'>
+        <div class="parent">
+            <div class="son1">
+                1
+            </div>
+            <p>相对于根元素创建的 BFC </p>
+        </div>
+    </div>
+
+    <div class="demo2">
+        <div class="parent">
+            <div class="son2">
+                2
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
